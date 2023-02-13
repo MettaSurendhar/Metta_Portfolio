@@ -2,14 +2,9 @@
   #style.css
 \*-----------------------------------*/
 
-
 /**
  * copyright 2022 @codewithsadee
  */
-
-
-
-
 
 /*-----------------------------------*\
   #CUSTOM PROPERTY
@@ -318,7 +313,7 @@ main {
 
 .sidebar {
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 128px;
   overflow: hidden;
   transition: var(--transition-2);
 }
@@ -335,6 +330,7 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
+  
 }
 
 .avatar-img {
@@ -1324,7 +1320,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 /*-----------------------------------*\
   #RESPONSIVE
-\*-----------------------------------*/
+\*------------------------------------------------------*/
 
 /**
  * responsive larger than 450px screen
@@ -1332,13 +1328,28 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (min-width: 450px) {
 
+  /* SIDEBAR  */
+  
+  .avatar-img {
+    border-radius: 16px;
+    width:80px ;
+  }
+
+  
+
   /**
    * client
    */
 
   .clients-item { min-width: calc(33.33% - 10px); }
 
+  /* RESUME */
 
+  .download-btn {
+    top: -60px;
+    left:55%;
+    
+  }
 
   /**
    * #PORTFOLIO, BLOG 
@@ -1347,6 +1358,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-img,
   .blog-banner-box { height: auto; }
 
+  /* RESUME */
+
+  .download-btn {
+    padding:8px 6px;
+  }
 }
 
 
@@ -1426,7 +1442,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar {
-    max-height: 180px;
+    max-height: 200px;
     margin-bottom: 30px;
   }
 
@@ -1436,7 +1452,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .avatar-box { border-radius: 30px; }
 
-  .avatar-box img { width: 120px; }
+
+  .avatar-img {
+    border-radius: 20px;
+    width: 120px;
+  }
 
   .info-content .name { margin-bottom: 15px; }
 
@@ -1582,8 +1602,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #RESUME
-   */
+   * #RESUME */
 
   .timeline-list { margin-left: 65px; }
 
@@ -1593,6 +1612,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     height: 8px;
     width: 8px;
     left: -43px;
+  }
+
+  .download-btn {
+    top: -80px;
+    left:60%;
+    
   }
 
   .skills-item:not(:last-child) { margin-bottom: 25px; }
@@ -1691,6 +1716,14 @@ textarea.form-input::-webkit-resizer { display: none; }
   .modal-avatar-box img { width: 80px; }
 
 
+  /* RESUME */
+  .download-btn{
+  top:  -80px;
+  left: 70%;
+  padding: 12px;
+
+  }
+
 
   /**
    * PORTFOLIO
@@ -1748,15 +1781,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (min-width: 1024px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+  /*  CUSTOM PROPERTY  */
 
   :root {
 
-    /**
-    * shadow
-    */
+    /*  shadow  */
 
     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
@@ -1791,9 +1820,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-  /**
-   * NAVBAR
-   */
+  /*  NAVBAR  */
 
   .navbar {
     position: absolute;
@@ -1816,9 +1843,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-  /**
-   * ABOUT
-   */
+  /*  ABOUT  */
 
   /* service */
 
@@ -1843,6 +1868,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-list { grid-template-columns: repeat(3, 1fr); }
 
+  /* RESUME */
+
+  .download-btn{
+    top:  20%;
+    left: 75%;
+    }
 
 
   /**
@@ -1857,15 +1888,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-/**
- * responsive larger than 1250px screen
- */
+/* responsive larger than 1250px screen  */
 
 @media (min-width: 1250px) {
 
-  /**
-   * RESET
-   */
+  /* RESET */
 
   body::-webkit-scrollbar { width: 20px; }
 
@@ -1885,9 +1912,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-  /**
-   * REUSED STYLE
-   */
+  /*  REUSED STYLE  */
 
   .sidebar, article { width: auto; }
 
@@ -1895,9 +1920,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-  /**
-   * MAIN
-   */
+  /*  MAIN  */
 
   main {
     max-width: 1200px;
@@ -1916,13 +1939,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-  /**
-   * SIDEBAR
-   */
+  /*  SIDEBAR  */
 
   .sidebar {
     position: sticky;
-    top: 60px;
+    top: 25px;
     max-height: max-content;
     height: 100%;
     margin-bottom: 0;
@@ -1932,7 +1953,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { flex-direction: column; }
 
-  .avatar-box img { width: 150px; }
+  .avatar-box img { width: 150px;}
 
   .info-content .name {
     white-space: nowrap;
@@ -1962,17 +1983,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .separator:last-of-type {
-    margin: 15px 0;
-    opacity: 0;
+    margin: 20px 0;
+    /* opacity: 0; */
   }
 
-  .social-list { justify-content: center; }
+  .social-list { justify-content: space-around; }
 
 
 
-  /**
-	 * RESUME
-	 */
+  /*  RESUME  */
 
   .timeline-text { max-width: 700px; }
 
