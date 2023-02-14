@@ -784,7 +784,9 @@ main {
 \*-----------------------------------*/
 
 .article-title { margin-bottom: 30px; }
-
+.resume{
+  overflow: hidden;
+}
 .download-icon ion-icon{
   fill: var(--vegas-gold);
   width:40px ;
