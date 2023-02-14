@@ -1102,6 +1102,7 @@ main {
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 40px;
+  justify-content: space-around;
 }
 
 /* .blog-post-item > a {
