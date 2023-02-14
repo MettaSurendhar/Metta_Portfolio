@@ -785,6 +785,19 @@ main {
 
 .article-title { margin-bottom: 30px; }
 
+.download-icon ion-icon{
+  fill: var(--vegas-gold);
+  width:40px ;
+  height: 40px;
+}
+
+.download-icon {
+  position: relative;
+  width: fit-content;
+  top: -50px;
+  left:80%;
+}
+
 .download-btn {
   position: relative;
   width: fit-content;
@@ -1077,7 +1090,7 @@ main {
 
 
 /*-----------------------------------*\
-  #BLOG
+  #SKILL SET
 \*-----------------------------------*/
 
 .blog-posts { margin-bottom: 10px; }
@@ -1348,9 +1361,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* RESUME */
 
   .download-btn {
-    top: -60px;
-    left:55%;
-    
+    visibility : hidden;
   }
 
   /**
@@ -1359,12 +1370,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-img,
   .blog-banner-box { height: auto; }
-
-  /* RESUME */
-
-  .download-btn {
-    padding:8px 6px;
-  }
 
   .project-img, .blog-banner-box { border-radius: 12px; }
 }
@@ -1618,7 +1623,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     left: -43px;
   }
 
+  .download-icon {
+    visibility: hidden;
+  }
+
   .download-btn {
+    visibility : visible;
     top: -80px;
     left:60%;
     
