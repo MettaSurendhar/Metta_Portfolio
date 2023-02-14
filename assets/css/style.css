@@ -1353,6 +1353,17 @@ textarea.form-input::-webkit-resizer { display: none; }
     width:80px ;
   }
 
+  /* ABOUT */ 
+
+  .about-img img{
+    width:160px ;
+  }
+
+  .about-title {
+    font-size: 24px;
+  }
+
+
   
 
   /**
@@ -1470,6 +1481,10 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 120px;
   }
 
+  .about-img img{
+    width:200px ;
+  }
+
   .info-content .name { margin-bottom: 15px; }
 
   .info-content .title { padding: 5px 18px; }
@@ -1517,6 +1532,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   .about .article-title { margin-bottom: 20px; }
 
   .about-text { margin-bottom: 40px; }
+
+  .about-title {
+    font-size: 30px;
+  }
+
 
   /* service */
 
@@ -1723,6 +1743,10 @@ textarea.form-input::-webkit-resizer { display: none; }
    * ABOUT
    */
 
+   .about-img img{
+    width:240px ;
+  }
+
   /* testimonials modal */
 
     /* .testimonials-modal {
@@ -1731,6 +1755,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     }
 
     .modal-avatar-box img { width: 80px; } */
+
 
 
   /* RESUME */
@@ -1812,8 +1837,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   }
 
-
-
+  
   /**
    * REUSED STYLE
    */
@@ -1863,6 +1887,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /*  ABOUT  */
+
+  about-img img{
+    width:280px ;
+  }
 
   /* service */
 
