@@ -1116,12 +1116,17 @@ main {
 
 .list-title{
   color:var(--white-1);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: var(--fw-600);
   text-transform: uppercase;
   font-size: 30px;
 }
+
+.list-title-margin{
+  margin-top: 60px;
+}
+
 .skill-list {
   height: 101px;
   width:100px;
@@ -1386,6 +1391,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   .blog-banner-box { height: auto; }
 
   .project-img, .blog-banner-box { border-radius: 12px; }
+
+  /* CONTACT */
+
+  .form-btn{
+    margin-top: 26px;
+  }
 }
 
 
@@ -1692,6 +1703,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   textarea.form-input { margin-bottom: 30px; }
 
   .form-btn {
+    
     --fs-6: 16px;
     padding: 16px 20px;
   }
@@ -1800,6 +1812,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
+
+  /* SKILL SET */
+
+  .blog-posts-list {
+    justify-content: center;
+  }
 
 
   /**
